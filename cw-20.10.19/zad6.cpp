@@ -3,14 +3,12 @@
 
 using namespace std;
 
-int main(){
-  int sum=0;
-  int currentNumber;
-  do{
-    cout << "Wprowadz liczbe: ";
-    cin >> currentNumber;
-    sum+=currentNumber;
-  }while(currentNumber!=0);
-  
-  cout << "Wynik: " << sum << endl;
+int main()
+{
+    int number;
+    cout << "Enter the number: ";
+    cin >> number;
+    int *pointerToNumber;
+    pointerToNumber = &number;
+    cout << "Number is: " << number << " Pointer: " << pointerToNumber << endl;
 }
